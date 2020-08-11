@@ -5,6 +5,8 @@ import { centerToTL, tLToCenter, getNewStyle, degToRadian } from './utils'
 
 export default class ResizableRect extends Component {
   static propTypes = {
+    id: PropTypes.string,
+    className: PropTypes.string,
     left: PropTypes.number.isRequired,
     top: PropTypes.number.isRequired,
     width: PropTypes.number.isRequired,
@@ -80,6 +82,7 @@ export default class ResizableRect extends Component {
 
   render () {
     const {
+      id, className,
       top, left, width, height, rotateAngle, parentRotateAngle, zoomable, rotatable,
       onRotate, onResizeStart, onResizeEnd, onRotateStart, onRotateEnd, onDragStart, onDragEnd
     } = this.props
@@ -88,6 +91,8 @@ export default class ResizableRect extends Component {
 
     return (
       <Rect
+        id={id}
+        className={className}
         styles={styles}
         zoomable={zoomable}
         rotatable={Boolean(rotatable && onRotate)}
