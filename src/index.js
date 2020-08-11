@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import Rect from './Rect'
+import Rect from './rect'
 import { centerToTL, tLToCenter, getNewStyle, degToRadian } from './utils'
 
 export default class ResizableRect extends Component {

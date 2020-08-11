@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { PureComponent } from 'react'
-import { getLength, getAngle, getCursor } from '../utils'
-import StyledRect from './StyledRect'
+import { getLength, getAngle, getCursor } from './utils'
 
 const zoomableMap = {
   'n': 't',
@@ -152,10 +151,10 @@ export default class Rect extends PureComponent {
     const direction = zoomable.split(',').map(d => d.trim()).filter(d => d) // TODO: may be speed up
 
     return (
-      <StyledRect
+      <div
         ref={this.setElementRef}
         onMouseDown={this.startDrag}
-        className="rect single-resizer"
+        className="rrrd rect single-resizer"
         style={style}
       >
         {
@@ -187,7 +186,7 @@ export default class Rect extends PureComponent {
             )
           })
         }
-      </StyledRect>
+      </div>
     )
   }
 }
