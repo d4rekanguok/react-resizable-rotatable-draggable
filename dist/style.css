@@ -1,0 +1,104 @@
+.rrrd {
+  position: absolute;
+  border: 1px solid #eb5648;
+}
+
+.rrrd .square {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: white;
+  border: 1px solid #eb5648;
+  border-radius: 1px;
+}
+
+.rrrd .resizable-handler {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.rrrd .resizable-handler.tl,
+.rrrd .resizable-handler.t,
+.rrrd .resizable-handler.tr {
+  top: -7px;
+}
+
+.rrrd .resizable-handler.tl,
+.rrrd .resizable-handler.l,
+.rrrd .resizable-handler.bl {
+  left: -7px;
+}
+
+.rrrd .resizable-handler.bl,
+.rrrd .resizable-handler.b,
+.rrrd .resizable-handler.br {
+  bottom: -7px;
+}
+
+.rrrd .resizable-handler.br,
+.rrrd .resizable-handler.r,
+.rrrd .resizable-handler.tr {
+  right: -7px;
+}
+
+.rrrd .resizable-handler.l,
+.rrrd .resizable-handler.r {
+  margin-top: -7px;
+}
+
+.rrrd .resizable-handler.t,
+.rrrd .resizable-handler.b {
+  margin-left: -7px;
+}
+
+.rrrd .rotate {
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rrrd .t,
+.rrrd .tl,
+.rrrd .tr {
+  top: -3px;
+}
+
+.rrrd .b,
+.rrrd .bl,
+.rrrd .br {
+  bottom: -3px;
+}
+
+.rrrd .r,
+.rrrd .tr,
+.rrrd .br {
+  right: -3px;
+}
+
+.rrrd .tl,
+.rrrd .l,
+.rrrd .bl {
+  left: -3px;
+}
+
+.rrrd .l,
+.rrrd .r {
+  top: 50%;
+  margin-top: -3px;
+}
+
+.rrrd .t,
+.rrrd .b {
+  left: 50%;
+  margin-left: -3px;
+}
